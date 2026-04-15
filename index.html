@@ -11,9 +11,19 @@
         <input type="text" id="display" disabled>
         <div class="buttons">
             <button onclick="clearDisplay()" class="operator">C</button>
-            <button onclick="appendToDisplay('/')" class="operator">/</button>
-            <button onclick="appendToDisplay('*')" class="operator">*</button>
+            <button onclick="appendToDisplay('(')" class="operator">(</button>
+            <button onclick="appendToDisplay(')')" class="operator">)</button>
             <button onclick="deleteLast()" class="operator">DEL</button>
+            
+            <button onclick="scientific('sin')">sin</button>
+            <button onclick="scientific('cos')">cos</button>
+            <button onclick="scientific('tan')">tan</button>
+            <button onclick="appendToDisplay('/')" class="operator">/</button>
+            
+            <button onclick="scientific('log')">log</button>
+            <button onclick="scientific('sqrt')">√</button>
+            <button onclick="appendToDisplay('**')">xʸ</button>
+            <button onclick="appendToDisplay('*')" class="operator">*</button>
             
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
@@ -32,6 +42,7 @@
             
             <button onclick="appendToDisplay('0')" class="zero">0</button>
             <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="scientific('pi')">π</button>
         </div>
     </div>
     <script src="script.js"></script>
