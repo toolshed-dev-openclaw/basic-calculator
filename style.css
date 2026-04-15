@@ -57,7 +57,7 @@ button:hover {
 }
 
 .equal {
-    grid-row: span 2;
+    grid-row: span 3;
     background-color: #27ae60;
 }
 
